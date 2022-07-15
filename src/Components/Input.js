@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Search } from "./Style/InputCSS";
+import { Search } from "../Style/InputCSS";
 
 function Input() {
   return (

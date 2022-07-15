@@ -1,5 +1,5 @@
 import React from "react";
-import { BgImg } from "./Style/MainBgCSS";
+import { BgImg } from "../Style/MainBgCSS";
 
 function MainBg() {
   return (

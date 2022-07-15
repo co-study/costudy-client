@@ -1,7 +1,7 @@
 import React from "react";
 import MainBg from "./MainBg";
 import Input from "./Input";
-import { Item } from "./Style/MainPageCSS";
+import { Item } from "../Style/MainPageCSS";
 function MainPage() {
   return (
     <div>
