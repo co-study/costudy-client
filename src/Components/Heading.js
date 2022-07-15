@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "./Style/Heading";
+import { Navbar } from "./Style/HeadingCSS";
 function Heading() {
   return (
     <div>
