@@ -7,15 +7,15 @@ const Search = styled.div`
   padding: 40px;
 
   .search {
-    width: 400px;
-    height: 36px;
-    margin: 10px auto;
+    width: 35%;
+    margin: 0px auto;
     position: relative;
     margin: auto 0;
   }
 
   input {
     width: 100%;
+    height: 40px;
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px 12px;

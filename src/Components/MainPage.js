@@ -7,28 +7,30 @@ function MainPage() {
     <div>
       <MainBg />
       <Input />
+
       <Item>
-        {[1, 2, 3, 4, 5, 6].map((element, idx) => {
-          return (
-            <div className="box" key={idx}>
-              <p className="title">{element}</p>
-              <button>코딩테스트</button>
-              <button>서울</button>
-              <button>모집중</button>
-              <hr />
-              <div className="info">
-                <div className="avatar_user">
-                  <img style={{ width: "30px" }} src="/user.png"></img>
-                  <span>noah</span>
-                </div>
-                <div className="avatar_Bookmark">
-                  {" "}
-                  <img style={{ width: "30px" }} src="/ribon.png"></img>
+        <div className="items">
+          {[1, 2, 3, 4, 5, 6].map((element, idx) => {
+            return (
+              <div className="box" key={idx}>
+                <p className="title">{element}</p>
+                <button>코딩테스트</button>
+                <button>서울</button>
+                <button>모집중</button>
+                <hr />
+                <div className="info">
+                  <div className="avatar_user">
+                    <img src="/user.png"></img>
+                    <span>noah</span>
+                  </div>
+                  <div className="avatar_Bookmark">
+                    <img src="/ribon.png"></img>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </Item>
     </div>
   );

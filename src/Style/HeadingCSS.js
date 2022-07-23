@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 const Navbar = styled.div`
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1180px;
   display: flex;
   justify-content: space-between;
   align-items: center;

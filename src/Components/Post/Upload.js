@@ -52,7 +52,9 @@ function Upload() {
           }}
         />
       </div>
-      <button className="submit-button">입력</button>
+      <div>
+        <button className="submit-button">입력</button>
+      </div>
     </Editor>
   );
 }

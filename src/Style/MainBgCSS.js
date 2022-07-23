@@ -4,8 +4,8 @@ const BgImg = styled.div`
 background-color: #3743ed;
 #mainBg {
   display: flex;
-  max-width: 1100px;
-  margin: 0 auto;
+  width:100%;
+  margin: 0px auto;
   height: 350px;
   padding: 0 20px;
   align-items: center;
@@ -17,6 +17,9 @@ background-color: #3743ed;
     text-align:center;
   }
   .home_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1 1;
     @media screen and (max-width: 560px) {
       display: flex;
@@ -48,7 +51,10 @@ background-color: #3743ed;
     }
   }
   .home_icon {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
     .home_avator{
       width:200px;
       @media screen and (max-width: 560px) {
