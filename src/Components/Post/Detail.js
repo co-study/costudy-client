@@ -15,7 +15,7 @@ function Detail() {
             <img src="./arrow.png"></img>
           </div>
           <span className="title">
-            데이터베이스 인터널스 북 스터디 하실분 모집합니다!
+            데이터베이스 인터널스 북 스터디 하실분 세분 모집합니다!
           </span>
         </div>
         <div className="content_user">
@@ -40,15 +40,15 @@ function Detail() {
             </li>
             <li className="status">
               <span className="status__title">주제</span>
-              <span>코딩테스트</span>
+              <span className="status__content">코딩테스트</span>
             </li>
             <li className="status">
               <span className="status__title">장소</span>
-              <span>서울</span>
+              <span className="status__content">서울</span>
             </li>
             <li className="status">
               <span className="status__title">모집인원</span>
-              <span>8명</span>
+              <span className="status__content">8명</span>
             </li>
           </ul>
         </div>
@@ -113,7 +113,7 @@ function Detail() {
         <label htmlFor="content">
           <h2>내용</h2>
         </label>
-        <textarea id="content">댓글을 입력 하세요</textarea>
+        <textarea placeholder="댓글을 입력하세요."></textarea>
         <div className="commentButton">
           <button>댓글등록</button>
         </div>
