@@ -33,18 +33,18 @@ const ContentHeader = styled.div`
     align-items: center;
     text-align: center;
     margin-top: 40px;
+    margin-left:10px;
     font-size: 1.2em;
+
   .userImg {
     width: 40px;
 
   }
   .userName{
-
     margin-right:10px;
   }
   .RegistrationDate {
     margin-top: 20px;
-
   }
   }
 `;
@@ -53,8 +53,14 @@ const ContentDetail = styled.div`
   max-width: 900px;
   margin:0 auto;
   .hopostInfo {
-    padding: 20px 0px 20px 0;
     border-top: 2px solid #e6e6e6;
+  }
+
+  .poststatus{
+    border-top: 2px solid #e6e6e6;
+  }
+  .poststatus h2{
+    margin-top:40px;
   }
   .status__info {
     display: grid;
