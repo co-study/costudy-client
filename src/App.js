@@ -4,6 +4,7 @@ import Heading from "./Component/Heading";
 import MainPage from "./Component/MainPage";
 import Upload from "./Component/Post/Upload";
 import Detail from "./Component/Post/Detail";
+import Board from "./Component/Room/Board";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/upload" element={<Upload />} />
         <Route path="/detail" element={<Detail />} />
+        <Route path="/study" element={<Board />} />
       </Routes>
     </>
   );
