@@ -6,12 +6,16 @@ const StudyContent = styled.div`
     padding: 0px 60px 0px 0px;
     img {
       width: 40px;
-      padding:0px;
+      padding: 0px;
     }
   }
   p {
     font-size: 1.125em;
     line-height: 1.8;
+  }
+  h3 {
+    color: #333;
+    font-weight: 700;
   }
 `;
 const ContentHeader = styled.div`
@@ -25,27 +29,26 @@ const ContentHeader = styled.div`
     display: flex;
     font-weight: 700;
     font-size: 2.2em;
-    margin-top:30px;
+    margin-top: 30px;
   }
   .content_user {
     display: flex;
-    gap :10px;
+    gap: 10px;
     align-items: center;
     text-align: center;
     margin-top: 40px;
-    margin-left:10px;
+    margin-left: 10px;
     font-size: 1.2em;
 
-  .userImg {
-    width: 40px;
-
-  }
-  .userName{
-    margin-right:10px;
-  }
-  .RegistrationDate {
-    margin-top: 20px;
-  }
+    .userImg {
+      width: 40px;
+    }
+    .userName {
+      margin-right: 10px;
+    }
+    .RegistrationDate {
+      margin-top: 20px;
+    }
   }
 `;
 
@@ -59,15 +62,15 @@ const ContentDetail = styled.div`
   .poststatus{
     border-top: 2px solid #e6e6e6;
   }
-  .poststatus h2{
-    margin-top:40px;
+  .poststatus h3{
+    margin-top:30px;
   }
   .status__info {
     display: grid;
     grid-template-columns: repeat(2,3fr);
-    row-gap:25px;
+    row-gap:50px;
     font-size: 20px;
-    margin:50px 0px;
+    margin:50px 0px 80px 0;
     padding:0 15px;
 
     button {
@@ -83,7 +86,13 @@ const ContentDetail = styled.div`
     }
     .status {
       display: flex;
+      align-items:center;
       margin:0px;
+        img{
+          width:25px;
+          height:25px;
+          margin-right:20px;
+        }
     }
     .status__title {
       display: block;
@@ -113,21 +122,24 @@ const ContentDetail = styled.div`
 const ContentComment = styled.div`
   max-width: 900px;
   margin: auto;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
 
   textarea {
     resize: none;
     height: 120px;
-    font-family:inferit;
-    padding:15px;
-    border : 2px solid #B5B5B5;
-    border-radius:10px;
-    font-size:18px;
+    font-family: inferit;
+    padding: 15px;
+    border: 2px solid #b5b5b5;
+    border-radius: 10px;
+    font-size: 18px;
   }
   label {
     font-weight: bold;
+    margin: 0 0 20px;
   }
+
   .commentButton {
     display: flex;
     justify-content: flex-end;
