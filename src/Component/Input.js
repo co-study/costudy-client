@@ -12,20 +12,21 @@ function Input() {
       </Search>
     </div>
   );
-  
 }
 
 const Search = styled.div`
   background-color: #f0f0f0;
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 40px 20px;
 
   .search {
-    width: 35%;
-    margin: 0px auto;
+    display: flex;
+    width: 500px;
     position: relative;
-    margin: auto 0;
+    @media screen and (max-width: 780px) {
+      width: 380px;
+    }
   }
 
   input {

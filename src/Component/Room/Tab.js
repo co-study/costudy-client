@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
 import { Nav } from "react-bootstrap";
+import Admin from "../Room/Admin";
 function Tab() {
   let [탭, 탭변경] = useState(0);
 
@@ -89,7 +90,11 @@ function Tabcontent(props) {
     );
   }
   if (props.탭 == 1) {
-    return <div className="comment">내용1</div>;
+    return (
+      <div className="admin">
+        <Admin />
+      </div>
+    );
   }
 }
 
@@ -195,6 +200,13 @@ const TabInfoItems = styled.div`
       font-size: 0.9em;
       font-weight: 600;
     }
+  }
+
+  .admin {
+    margin: 40px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 export { Tabs, TabInfoItems };

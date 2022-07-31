@@ -5,6 +5,7 @@ import MainPage from "./Component/MainPage";
 import Upload from "./Component/Post/Upload";
 import Detail from "./Component/Post/Detail";
 import Board from "./Component/Room/Board";
+import Login from "./Component/User/Login";
 function App() {
   return (
     <>
@@ -12,8 +13,10 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/upload" element={<Upload />} />
-        <Route path="/detail" element={<Detail />} />
+        <Route path="/detail/:postNum" element={<Detail />} />
         <Route path="/study" element={<Board />} />
+
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );

@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 const StudyContent = styled.div`
   padding: 1.5rem 1.5rem 5rem;
   .sider__arrow {
+    border: none;
+    background-color: transparent;
     display: flex;
     padding: 0px 60px 0px 0px;
     img {
@@ -37,13 +39,20 @@ const ContentHeader = styled.div`
     align-items: center;
     text-align: center;
     margin-top: 40px;
-    margin-left: 10px;
     font-size: 1.2em;
-
-    .userImg {
-      width: 40px;
+    .user_img {
+      display: flex;
+      width: 36px;
+      height: 36px;
+      border: 1.5px solid #858585;
+      border-radius: 100%;
+      img {
+        width: 35px;
+      }
     }
     .userName {
+      font-weight: 600;
+      color: #333;
       margin-right: 10px;
     }
     .RegistrationDate {
@@ -74,6 +83,7 @@ const ContentDetail = styled.div`
     padding:0 15px;
 
     button {
+      font-size:0.8em;
       color: #3743ed;
       background-color: white;
       border: 1px solid #3743ed;
@@ -89,8 +99,8 @@ const ContentDetail = styled.div`
       align-items:center;
       margin:0px;
         img{
-          width:25px;
-          height:25px;
+          width:20px;
+          height:20px;
           margin-right:20px;
         }
     }
@@ -103,7 +113,7 @@ const ContentDetail = styled.div`
     .status__numer {
       margin-right: 80px;
     }
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 800px) {
       grid-template-columns: repeat(1, 6fr);
     }
    }

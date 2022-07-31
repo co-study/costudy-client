@@ -1,17 +1,27 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 function Heading() {
   return (
     <div>
       <Navbar>
-        <div className="navbar_logo">Costudy</div>
-        <button className="navbar_login">Login</button>
+        <Link to="/">
+          <div className="navbar_logo">Costudy</div>
+        </Link>
+        <Link to="/login">
+          <button onClick={(e) => {}} className="navbar_login">
+            Login
+          </button>
+        </Link>
       </Navbar>
     </div>
   );
 }
 
 const Navbar = styled.div`
+a {
+  color: black;
+  text-decoration: none}
   margin: 0 auto;
   max-width: 1180px;
   display: flex;

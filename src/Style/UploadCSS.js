@@ -38,7 +38,7 @@ const Editor = styled.div`
     outline: none;
   }
 
-  .submit-button {
+  .submit-botton {
     display: flex;
     justify-content: flex-end;
     margin: 10px 0;

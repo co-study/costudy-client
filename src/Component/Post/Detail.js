@@ -6,21 +6,30 @@ import {
   ContentComment,
 } from "../../Style/DetailCSS";
 
+import usericon from "../Icons/user.png";
+import Tag from "../Icons/tag.png";
+import arrow from "../Icons/arrow.png";
+
+import { useNavigate } from "react-router-dom";
+
 function Detail() {
+  const navigate = useNavigate();
   return (
     <StudyContent>
       <ContentHeader>
         <div>
-          <div className="sider__arrow">
-            <img src="./arrow.png"></img>
-          </div>
+          <button onClick={() => navigate(-1)} className="sider__arrow">
+            <img src={arrow}></img>
+          </button>
           <span className="title">
             데이터베이스 인터널스 북 스터디 하실분 세분 모집합니다!
           </span>
         </div>
 
         <div className="content_user">
-          <img className="userImg" src="./user.png"></img>
+          <div className="user_img">
+            <img src={usericon}></img>
+          </div>
           <div>
             <span className="userName">noah</span>
           </div>
@@ -36,22 +45,22 @@ function Detail() {
           </div>
           <ul className="status__info">
             <li className="status">
-              <img src="./attend.png"></img>
+              <img src={Tag}></img>
               <span className="status__title">스터디</span>
               <button>지원하기</button>
             </li>
             <li className="status">
-              <img src="./book.png"></img>
+              <img src={Tag}></img>
               <span className="status__title">주제</span>
               <span className="status__content">코딩테스트</span>
             </li>
             <li className="status">
-              <img src="./location.png"></img>
+              <img src={Tag}></img>
               <span className="status__title">장소</span>
               <span className="status__content">서울</span>
             </li>
             <li className="status">
-              <img src="./meet.png"></img>
+              <img src={Tag}></img>
               <span className="status__title">모집인원</span>
               <span className="status__content">8명</span>
             </li>
@@ -87,7 +96,7 @@ function Detail() {
       </ContentDetail>
       <ContentComment>
         <label htmlFor="content">
-          <h3>eit</h3>
+          <h3>댓글</h3>
         </label>
         <textarea placeholder="댓글을 입력하세요."></textarea>
         <div className="commentButton">
